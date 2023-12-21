@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Hole#10 Apperal</h1>
+          <p id="description" class="description text-center">
+        Thank you for taking the time to help us improve our products
+        </p>
+        </header>
+        <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age
+            <span class="clue">(optional)</span>
+          </label>
+          <input type="number" name="age" id="number" min="3" max="99" class="form-control" placeholder="Age" required>
+        </div>
+        <div class="form-group">
+        <p>Which option best describes your current skill level?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current skill level</option>
+          <option>New to golf</option>
+          <option>Casual golfer</option>
+          <option>Scratch golfer</option>
+          <option>Tour Pro</option>
+          <option>Other</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend Hole#10 Apperal to a freind?</p>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>
+            Definitley
+          </label>
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">
+            Maybe
+          </label>
+          <label>
+            <input name="user-recommend" value="not-sure" type="radio" class="input-radio">
+            Not sure
+          </label>
+        </div>
+        <div class="form-group">
+        <p>What is your favorite characteristic of Hole#10 Apperal?</p>
+        <select id="most-like" name="mostlike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="price">Price/Affordability</option>
+          <option value="material">Materials/Quality</option>
+          <option value="color">Colorways</option>
+          <option value="design">Designs</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <p>Where do prefer to prefer to purchase our products?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label>
+            <input name="prefer" value="online" type="checkbox" class="input-checkbox">Online site</label>
+          <label>
+            <input name="prefer" value="walmart" type="checkbox" class="input-checkbox">Walmart</label>
+          <label>
+            <input name="prefer" value="target" type="checkbox" class="input-checkbox">Target</label>
+          <label>
+            <input name="prefer" value="dicks" type="checkbox" class="input-checkbox">Dick's Sporting Goods</label>
+          <label>
+            <input name="prefer" value="pga" type="checkbox" class="input-checkbox">PGA Tour Superstore</label>
+          <label>
+            <input name="prefer" value="galaxy" type="checkbox" class="input-checkbox">Golf Galaxy</label>
+          <label>
+            <input name="prefer" value="academy" type="checkbox" class="input-checkbox">Academy Sports</label>
+          <label>
+            <input name="prefer" value="clubhouse" type="checkbox" class="input-checkbox">Local Course Clubhouses</label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div>
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+        </form>
+            </div>
+</body>
+</html>
